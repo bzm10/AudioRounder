@@ -59,7 +59,7 @@ for file_name in files:
                 print(f'Original audio duration: {duration} seconds')
                 print(f'Rounded audio duration: {rounded_duration} seconds')
                 print(f'Speed factor: {speed_factor}')
-                print('Rounding audio to the nearest minute...\n')
+                print(f'Rounding {file_name} to the nearest minute...\n')
 
                 # Run the ffmpeg command to round the audio to the nearest minute using the speed factor and save the modified file to the modified folder
                 subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'panic', '-i', file_path, '-filter:a', f'atempo={speed_factor}', '-vn', modified_file_path])
