@@ -43,7 +43,7 @@ pip3 install pydub
 ### 1. You need to download this repository
 You can use git:
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/bzm10/AudioRounder.git
 ```
 ### 2. Save it to the same location that has the audio files
 ```bash
